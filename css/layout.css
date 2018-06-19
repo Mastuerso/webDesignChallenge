@@ -1,0 +1,170 @@
+.container {    
+    display: grid;
+    grid-template-columns: 1fr 320px 1fr;
+}
+
+.band {
+    background-color: #E7E2FE;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 37px;
+}
+.userName {    
+    text-transform: none;
+    color: #521DA9;
+    font-weight: normal;
+    text-align: left;
+    font-size: 12px;
+    padding: 15px;
+    letter-spacing: 0.44px;
+    line-height: 24px;    
+}
+
+.close {    
+    background-color: #E7E2FE;
+    color: #521DA9;
+    font-size: 22px;
+    font-weight: lighter;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    cursor: pointer;    
+}
+
+.bg {
+    background-color: #715EBB;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    align-items: center;          
+}
+
+.title {
+    grid-column: 1 / -1;
+    color: white;
+    padding: 6px;
+    text-shadow: 1px 1px 1px rgb(37, 37, 37);
+}
+
+.bonuses, .offers {
+    display: grid;    
+}
+
+.bonus, .offer, .offerL {    
+    background-color: white;
+    margin: 6px auto 11px auto;
+    display: grid;
+    grid-template-columns: 200px 57px;
+    height: 124px;
+    border-radius: 4px;    
+}
+
+.offerL {
+    background-color: #9a88e3;
+}
+
+.offerL > .description {
+    color: #8071be;
+}
+
+.description {
+    font-size: 15px;
+    justify-self: center;
+    align-self: center;
+    margin: 6px;    
+}
+
+.ready, .onhold, .locked {    
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    border-radius: inherit;    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ready {
+    background-color: #E9F2DF;
+    background-image: url("../assets/tick.svg");
+}
+
+.onhold {
+    background-color: #FFECD6;
+    background-image: url("../assets/clock.png");
+}
+
+.locked {
+    background-color: #8773d5;
+    background-image: url("../assets/lock.svg");
+}
+
+.bonusBtn, .depositBtn {
+    margin: auto;
+    font-size: 12px;    
+    border: none;    
+    border-radius: 2px;
+    width: auto;
+    height: 28px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.bonusBtn {
+    background: linear-gradient(#FF6BCA, #FF78CF, #FF00A8);
+    box-shadow: 0px 1px 1px 1px #AC0C75;
+}
+
+.depositBtn {
+    background: linear-gradient(#2A740D ,#86BA2B);
+    box-shadow: 0px 1px 1px 1px #1C4F06;
+}
+
+
+@media screen and (min-width: 768px){
+    .container {    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .band {
+        grid-column: 1 / -1;
+    }
+
+    .bg {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 736px 1fr;        
+    }
+
+    .vColumn {
+        grid-column: 2 / 3;
+    }
+    
+    .bonuses, .offers {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));        
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .bonus, .offer, .offerL {
+        width: 334px;
+        height: 203px;
+        border-radius: 6px;
+        grid-template-columns: 1fr 74px;
+    }
+
+    .description {
+        font-size: 22px;
+    }
+
+    .bonusBtn, .depositBtn {
+        font-size: 16px;
+        width: 188px;
+        height: 38px;
+    }
+
+}

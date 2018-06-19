@@ -1,0 +1,50 @@
+{
+    "userName": "Jess2223",
+    "bonuses": [
+      {
+        "game": "bingo",
+        "status": "ready",
+        "type": "currency",
+        "ammount": 10,
+        "extra": []
+      },
+      {
+        "game": "gemix",
+        "status": "ready",
+        "type": "spins",
+        "ammount": 50,
+        "extra": []
+      }
+    ],
+    "offers": [
+      {
+        "game": "bingo",
+        "status": "onhold",
+        "deposit": 1,
+        "type": "percentage",
+        "ammount": 300,
+        "extra": [
+          {
+            "type": "spins",
+            "ammount": 100
+          }
+        ]
+      },
+      {
+        "game": "slot",
+        "status": "onhold",
+        "deposit": 1,
+        "type": "percentage",
+        "ammount": 100,
+        "extra": []
+      },
+      {
+        "game": "bingo",
+        "status": "locked",
+        "deposit": 2,
+        "type": "percentage",
+        "ammount": 150,
+        "extra": []
+      }
+    ]
+  }
